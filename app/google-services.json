@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "100139928467",
+    "project_id": "assp-server-c10wn",
+    "storage_bucket": "assp-server-c10wn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100139928467:android:ca8882d639048e9d3f7666",
+        "android_client_info": {
+          "package_name": "com.example.assp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100139928467-c641f1nsqs4rc8hhhadj9omloq1efd85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBadZrV7ZvOLO6ipaj23FY4_HVzLDgWPb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100139928467-c641f1nsqs4rc8hhhadj9omloq1efd85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

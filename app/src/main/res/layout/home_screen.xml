@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/handSanitizerButton"
+        android:layout_width="315dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E44646"
+        android:enabled="true"
+        android:onClick="activateButton"
+        android:text="@string/hand_sanitizer"
+        android:textColor="@color/white"
+        app:cornerRadius="10dip"
+        app:layout_constraintBottom_toTopOf="@+id/thermometerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:strokeWidth="5dip"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/RFIDButton"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D87D7D"
+        android:text="@string/rfid_authentication"
+        android:textColor="@color/white"
+        app:backgroundTint="#B88585"
+        app:cornerRadius="10dip"
+        app:layout_constraintBottom_toTopOf="@+id/doorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maskButton"
+        app:strokeWidth="5dip"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/thermometerButton"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E44646"
+        android:text="@string/thermometer"
+        android:textColor="@color/white"
+        app:cornerRadius="10dip"
+        app:layout_constraintBottom_toTopOf="@+id/maskButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/handSanitizerButton"
+        app:strokeWidth="5dip"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/doorButton"
+        android:layout_width="311dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#D87D7D"
+        android:text="@string/door"
+        android:textColor="@color/white"
+        app:backgroundTint="#FFB88585"
+        app:cornerRadius="10dip"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RFIDButton"
+        app:strokeWidth="5dip"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/maskButton"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E44646"
+        android:text="@string/mask"
+        android:textColor="@color/white"
+        app:backgroundTint="#E44646"
+        app:cornerRadius="10dip"
+        app:layout_constraintBottom_toTopOf="@+id/RFIDButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thermometerButton"
+        app:strokeWidth="5dip"
+        tools:targetApi="lollipop" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="handSanitizerButton,thermometerButton,maskButton,RFIDButton,doorButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_screen_title"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--    package com.example.assp;-->
+
+<!--    import android.content.Intent;-->
+<!--    import android.os.Bundle;-->
+<!--    //import android.support.v4.app.AppCompatActivity;-->
+<!--    import androidx.appcompat.app.AppCompatActivity;-->
+<!--    import android.view.View;-->
+
+
+<!--    public class MainActivity extends AppCompatActivity {-->
+
+<!--    @Override-->
+<!--    protected void onCreate(Bundle savedInstanceState) {-->
+<!--    super.onCreate(savedInstanceState);-->
+<!--    setContentView(R.layout.activity_main);-->
+<!--    }-->
+
+<!--    public void openActivity2(View view) {-->
+<!--    Intent intent = new Intent(this, Activity2.class);-->
+<!--    startActivity(intent);-->
+<!--    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);-->
+<!--    }-->
+<!--    }-->

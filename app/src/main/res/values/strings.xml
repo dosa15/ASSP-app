@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ASSP</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="automated_sanitization_and_security_protocol">Automated Sanitization\nand Security Protocol</string>
+    <string name="assp">A S S P</string>
+    <string name="hand_sanitizer">Hand Sanitizer</string>
+    <string name="thermometer">Thermometer</string>
+    <string name="door">Door is open</string>
+    <string name="mask">Mask on</string>
+    <string name="rfid_authentication">RFID Authentication</string>
+    <string name="home_screen_title">Sanitization and Security</string>
+</resources>

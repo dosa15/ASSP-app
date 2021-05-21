@@ -1,0 +1,2 @@
+rootProject.name = "ASSP"
+include ':app'
