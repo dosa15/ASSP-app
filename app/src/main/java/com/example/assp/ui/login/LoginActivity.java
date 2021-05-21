@@ -171,12 +171,12 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         });
-//        auth.signInWithEmailAndPassword(username, password).addOnFailureListener(new OnFailureListener() {
-//            @Override
-//            public void onFailure(Exception e) {
+        auth.signInWithEmailAndPassword(username, password).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(Exception e) {
                 Toast.makeText(LoginActivity.this,"Invalid Credentials!", Toast.LENGTH_SHORT).show();
-//            }
-//        });
+            }
+        });
 //        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
 

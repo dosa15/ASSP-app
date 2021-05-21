@@ -11,9 +11,10 @@
     <string name="automated_sanitization_and_security_protocol">Automated Sanitization\nand Security Protocol</string>
     <string name="assp">A S S P</string>
     <string name="hand_sanitizer">Hand Sanitizer</string>
-    <string name="thermometer">Thermometer</string>
+    <string name="thermometer">No Fever. Temp: 98.6ºF</string>
     <string name="door">Door is open</string>
-    <string name="mask">Mask on</string>
+    <string name="maskOff">Mask Off</string>
+    <string name="maskOn">Mask On</string>
     <string name="rfid_authentication">RFID Authentication</string>
     <string name="home_screen_title">Sanitization and Security</string>
 </resources>

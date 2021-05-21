@@ -100,7 +100,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#E44646"
-        android:text="@string/mask"
+        android:text="@string/maskOff"
         android:textColor="@color/white"
         app:backgroundTint="#E44646"
         app:cornerRadius="10dip"
