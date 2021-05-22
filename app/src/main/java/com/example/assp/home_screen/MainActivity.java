@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     DataSnapshot dataSnapshot;
     private Button button;
     static private boolean activatedHandSanitizer = false, activatedThermometer = false, activatedMask = false, activatedRFID = false, activatedDoor = false;
-    static String temperature = "98.6";
+    static String temperature = "100.8";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 //            });
 
 
-        // https://console.firebase.google.com/u/1/project/assp-efa06/database/assp-efa06-default-rtdb/data/
+            // https://console.firebase.google.com/u/1/project/assp-efa06/database/assp-efa06-default-rtdb/data/
 
             final HashMap<String, String> sensorData = new HashMap<>();
             sensors.addValueEventListener(new ValueEventListener() {
@@ -151,9 +151,9 @@ public class MainActivity extends AppCompatActivity {
                     if (sensorData.get("Hands Sanitized").equals("true") != activatedHandSanitizer) {
                         handSanitizerButton.performClick();
                     }
-                    if (sensorData.get("Fever").equals("false") == activatedThermometer) {
+                    temperature = sensorData.get("Temperature");
+                    if (sensorData.get("Fever").equals("false") != activatedThermometer) {
                         thermometerButton.performClick();
-                        temperature = sensorData.get("Temperature");
                     }
                     if (sensorData.get("Mask On").equals("true") != activatedMask) {
                         maskButton.performClick();
