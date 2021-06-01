@@ -12,7 +12,7 @@
     <string name="assp">A S S P</string>
     <string name="hand_sanitizer">Hand Sanitizer</string>
     <string name="thermometer">Fever. Temp: </string>
-    <string name="door">Door is open</string>
+    <string name="door">Door is Closed</string>
     <string name="maskOff">Mask Off</string>
     <string name="maskOn">Mask On</string>
     <string name="rfid_authentication">RFID Authentication</string>

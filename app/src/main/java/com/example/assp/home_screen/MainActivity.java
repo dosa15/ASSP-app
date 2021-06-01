@@ -101,9 +101,11 @@ public class MainActivity extends AppCompatActivity {
                 if (activatedRFID && userIsSafe()) {
                     RFIDButton.setBackgroundColor(getResources().getColor(R.color.activatedButton));
                     doorButton.setBackgroundColor(getResources().getColor(R.color.activatedButton));
+                    doorButton.setText("Door is Open");
                 } else {
                     RFIDButton.setBackgroundColor(getResources().getColor(R.color.deactivatedButton));
                     doorButton.setBackgroundColor(getResources().getColor(R.color.deactivatedButton));
+                    doorButton.setText("Door is Closed");
                 }
 
             }
